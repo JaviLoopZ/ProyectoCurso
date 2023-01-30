@@ -1,0 +1,91 @@
+
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.span-muebles
+{
+    color: #037BC0;
+}
+
+
+/* span {
+    color: #037BC0;
+} */
+
+/* nav {
+    font-family: 'Playfair Display', serif;
+} */
+
+main {
+    padding: 20px;
+    /* display: flex; */
+}
+
+/* .column {
+    flex: 1;
+} */
+
+.product-img, .category-img{
+    width: 100%;
+}
+
+.product-row, .category-row, .footer-row{
+    display: flex;
+} 
+
+.product-col-6 {
+    flex: 1;
+} 
+
+.product-col-4, .category-col-4, .footer-col-4{
+    flex: 1;
+} 
+
+/* .product-col-2 {
+    flex: 1;
+}  */
+
+
+.product-info {
+    background-color: blue;
+    color: white;
+    /* padding: 20px; */
+}
+
+.product-name {
+    font-size: 20px;
+}
+
+.product-description {
+    font-size: 14px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: #037BC0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer
+{
+    text-align: center;
+}
+.footer nav a {
+    color: black;
+    text-decoration: none;
+}
+
+/* .footer-col-3 nav ul li{
+    color: black;
+    text-decoration: none;
+} */

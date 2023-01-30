@@ -1,0 +1,275 @@
+/*reglas generales*/
+html{
+    font-size: 62.5;
+}
+body{
+    font-family: 'Raleway', serif; 
+    font-size: 1.6em;
+    line-height: 2;
+    max-width: 100%;
+}
+h1, h2, h3 {
+    font-family: 'Playfair', sans-serif; 
+    text-align: center;
+} 
+
+.bs-green {
+    background-color: #8cbc00; /* nuevo color de fondo */
+    color: white; /* mantenemos el texto blanco */
+}
+
+.bs-blue{
+    background-color: #037BC0; 
+    color: white;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2, h3{
+    font-size: 4rem;
+}
+
+ul
+{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    
+}
+
+.span-muebles
+{
+    color: #037BC0;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-option {
+    flex: 1;
+}
+.menu-button
+{
+    display: none;
+}
+
+.hero{
+    height: 25rem;
+    border-radius: 5px;
+}
+
+/*Media Query*/
+
+@media (max-width: 768px) {
+    /* oculta el menú */
+    .nav-menu {
+        display: none;
+    }
+    /* muestra el botón */
+    .menu-button {
+        display: block;
+    }
+
+    .hero{
+        height: 55rem;
+    }
+}
+
+/** Reescribir colores */
+
+/** Hero */
+.hero {
+    background-image: url(/IMG/principal.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+}
+/** Productos */
+.productos{
+    max-width: 100%;
+    align-items: center;
+    padding: 3.5em;
+    padding-bottom: 0.5em;
+    padding-top: 2em;
+}
+
+.grid-container-1 {
+    display: grid;
+    /* grid-template-columns: 2fr 1fr; */
+    align-items: center;
+    padding: 0.5em;
+}
+
+.row-product-1{
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    column-gap: 10px;
+}
+
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    column-gap: 10px;
+    padding: 0.5em;
+}
+.grid-item-col-1{
+    background-image: url(/IMG/producto1.jpg);
+    
+}
+
+.img-prod-1{
+    background-image: url(/IMG/producto1.jpg);
+    background-repeat: round;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid gray;
+    overflow: hidden;
+}
+
+
+.grid-item-col-2{
+    border-radius: 10px 0 0 10px;
+    border: 2px solid gray;
+    overflow: hidden;
+    height: 100%;
+}
+.grid-item-2 {
+    padding: 10px;
+}
+
+.grid-item-2{
+    height: 100%;
+}
+
+.column-border-img
+{
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid gray;
+    overflow: hidden;
+}
+
+.column-border
+{
+    border-radius: 5px 5px 0 0;
+    border: 2px solid gray;
+    overflow: hidden;
+}
+
+.column-border-product1
+{
+    border-radius: 5px 0 0 5px;
+    border: 2px solid gray;
+    overflow: hidden;
+}
+
+.product-img-row1
+{
+    height: 100%;
+}
+
+.product-img-row2
+{
+    width: 100%;
+}
+
+.product-row {
+    display: flex;
+} 
+
+.product-col-6 {
+    flex: 1;
+} 
+
+.product-col-4{
+    flex: 1;
+} 
+
+.product-info {
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 0.5em;
+    /* padding: 20px; */
+}
+
+.product-name {
+    font-size: 20px;
+}
+
+.product-description {
+    text-align: center;
+    font-size: 14px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    /* background-color: #037BC0; */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+/** Categorias*/
+.categorias{
+    max-width: 100%;
+    align-items: center;
+    padding: 3.5em;
+    padding-top: 0.5em;
+}
+.grid-container-category {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    column-gap: 10px;
+    padding: 0.5em;
+}
+
+
+/** Footer */
+.footer{
+    text-align: center;
+}
+.footer-row{
+    display: flex;
+    text-align: center;
+}
+.footer-row-derechos{
+    text-align: center;
+    padding: 1.5em;
+}
+
+.footer-col-4
+{
+    flex: 1;
+}
+
+.footer nav{
+    display: flex;
+    flex-direction:column;
+}
+
+.footer nav a{
+    color: black;
+}
