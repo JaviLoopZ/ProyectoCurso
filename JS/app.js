@@ -1,4 +1,6 @@
 const modalImagen = document.querySelector('#modal-imagen');
+const navbarToggler = document.querySelector(".navbar-toggler");
+//const navbarMenu = document.querySelector(".navbar-menu");
 
 if(modalImagen) {
     modalImagen.addEventListener('show.bs.modal', function(event) {
@@ -6,7 +8,7 @@ if(modalImagen) {
         const rutaImagen = enlace.getAttribute('data-bs-imagen');
     
        // Construir la imagen
-       const imagen = document.createElement('IMG');
+      const imagen = document.createElement('IMG');
         imagen.src = `img/${rutaImagen}.jpg`;
         imagen.classList.add('img-fluid');
         imagen.alt = 'Imagen Galería';
@@ -43,3 +45,17 @@ if(modalImagen) {
         }, false)
       })
   })()
+
+  //Mostrar y ocultar menú
+function ShowMenu(){
+  
+
+    const menu = document.querySelector('.navbar-menu');
+    menu.classList.toggle('show');
+  
+  //navbarToggler.addEventListener("click", function() {
+   // navbarMenu.classList.toggle("show");
+  //});
+}
+  
+  

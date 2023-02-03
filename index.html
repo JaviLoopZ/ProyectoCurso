@@ -12,31 +12,29 @@
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
         <h1><span class="title">Tienda <span class="span-muebles">Muebles</span></span></h1>
     </header>
-    <nav class="nav-menu">
-        <a class="nav-option" href="#">Inicio</a>
-        <a class="nav-option" href="#">Nosotros</a>
-        <a class="nav-option" href="#">Tienda</a>
-        <a class="nav-option" href="#">Blog</a>
-        <a class="nav-option" href="#">Galería</a>
-        <a class="nav-option" href="#">Contacto</a>
-        <!-- <ul>
+
+
+    <nav class="navbar">
+        <button class="navbar-toggler" onclick="ShowMenu()">Menú</button>
+        <ul class="navbar-menu">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Nosotros</a></li>
             <li><a href="#">Tienda</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Galería</a></li>
             <li><a href="#">Contacto</a></li>
-        </ul> -->
+        </ul>
+        
     </nav>
-    <div class="menu-button">
-        <button type="menu">Menú</button>
-    </div>
+
+
     <div class="hero">
         <div></div>
         <!-- hero content here -->
@@ -46,6 +44,7 @@
         <div class="grid-container-1">
             <div class="row-product-1">
                 <div class="col-9 img-prod-1">
+                   
                 </div>
                 <div class="col-3">
                     <div class="product-info column-border-product1 bs-blue">
@@ -128,7 +127,7 @@
         <div class="grid-container-category">
             <div class="">
                 <div class="product-img column-border-img">
-                    <a href="#"><img src="./IMG/categoria1.jpg" class="product-img-row2"></a>
+                    <a href="#"><img src="./IMG/categoria1.jpg" class="product-img-catego"></a>
                 </div>
                 <div class="">
                     <h3>Oficina</h3>
@@ -136,7 +135,7 @@
             </div>
             <div class="">
                 <div class="product-img column-border-img">
-                    <a href="#"><img src="./IMG/categoria2.jpg" class="product-img-row2"></a>
+                    <a href="#"><img src="./IMG/categoria2.jpg" class="product-img-catego"></a>
                 </div>
                 <div class="">
                     <h3>Hogar</h3>
@@ -145,7 +144,7 @@
 
             <div class="">
                 <div class="product-img column-border-img">
-                    <a href="#"><img src="./IMG/categoria3.jpg" class="product-img-row2"></a>
+                    <a href="#"><img src="./IMG/categoria3.jpg" class="product-img-catego"></a>
                 </div>
                 <div class="">
                     <h3>Cocina</h3>
@@ -188,12 +187,13 @@
             </div>
         </div>
         <div class="footer-row-derechos">
-            <p>Todos los derechos reservados. Tienda de muebles</p>
-            
+            <p>Todos los derechos reservados. Tienda muebles</p>
+
         </div>
     </footer>
 
     <script src="/JS/bootstrap.bundle.min.js"></script>
+    <script src="/JS/app.js"></script>
 </body>
 
 </html>

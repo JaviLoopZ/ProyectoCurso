@@ -3,8 +3,8 @@ html{
     font-size: 62.5;
 }
 body{
-    font-family: 'Raleway', serif; 
-    font-size: 1.6em;
+    font-family: 'Raleway', sans-serif; 
+    font-size: 1.6rem;
     line-height: 2;
     max-width: 100%;
 }
@@ -46,39 +46,84 @@ nav a{
     color: #037BC0;
 }
 
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-}
-.nav-option {
-    flex: 1;
-}
-.menu-button
+.btn-menu
 {
     display: none;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: height 0.35s ease;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transition: height 0.35s ease;
+  }
+  
+  .navbar li {
+    margin: 0 10px;
+  }
+  
+  .navbar-toggler {
+    display: none;
+  }
 
 .hero{
     height: 25rem;
     border-radius: 5px;
 }
 
-/*Media Query*/
+.navbar-menu
+{
+    transition: height 0.35s ease;
+}
 
-@media (max-width: 768px) {
-    /* oculta el menú */
-    .nav-menu {
-        display: none;
+/*Media Query*/
+  
+  @media (max-width: 768px) {
+    .navbar ul {
+      display: none;
     }
-    /* muestra el botón */
-    .menu-button {
+
+    .navbar-menu
+    {
+        transition: height 0.35s ease;
+    }
+    
+    .navbar-toggler {
+      display: block;
+      background-color: #333;
+      color: gray;
+      padding: 10px 15px;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .navbar
+    {
+        transition: height 0.35s ease;
+    }
+
+    .grid-container-1{
         display: block;
     }
+  }
 
-    .hero{
-        height: 55rem;
-    }
-}
+.navbar-menu.show {
+    display: block;
+    position: fixed;
+    height: auto;
+    margin-top: 180px;
+    background: white;
+    
+  }
 
 /** Reescribir colores */
 
@@ -128,13 +173,16 @@ nav a{
     column-gap: 10px;
     padding: 0.5em;
 }
-.grid-item-col-1{
+/* .grid-item-col-1{
     background-image: url(/IMG/producto1.jpg);
     
+} */
+.prod-1{
+    display: contents;
 }
 
 .img-prod-1{
-    background-image: url(/IMG/producto1.jpg);
+     background-image: url(/IMG/producto1.jpg); 
     background-repeat: round;
     border-radius: 10px 0 0 10px;
     border: 2px solid gray;
@@ -182,9 +230,20 @@ nav a{
     height: 100%;
 }
 
-.product-img-row2
+.product-img-row2, .product-img-catego
 {
     width: 100%;
+}
+
+.product-img-catego
+{
+    transition: transform 1s;
+    overflow: hidden;
+}
+
+.product-img-catego:hover
+{
+    transform: scale(1.2);
 }
 
 .product-row {

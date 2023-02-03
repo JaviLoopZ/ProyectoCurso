@@ -1,0 +1,132 @@
+/*reglas generales*/
+html{
+    font-size: 62.5;
+}
+body{
+    font-family: 'Raleway', serif; 
+    font-size: 1.6em;
+    line-height: 2;
+}
+h1, h2, h3 {
+    font-family: 'Playfair', sans-serif; 
+    text-align: center;
+} 
+
+h1{
+    font-size: 5rem;
+}
+
+h2, h3{
+    font-size: 4rem;
+}
+
+ul
+{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    
+}
+
+.span-muebles
+{
+    color: #037BC0;
+}
+
+/*Media Query*/
+
+/** Reescribir colores */
+
+
+/** body */
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-options {
+    flex: 1;
+}
+
+/** Hero */
+.hero {
+    background-image: url(/IMG/principal.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+}
+/** Productos */
+
+.img-prod-1{
+    background-image: url(/IMG/producto1.jpg);
+    background-repeat: round;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.img-row-1{
+    text-align: center;
+}
+
+.img-row-1 img{
+    margin: auto;
+    display: block;
+    background-repeat: round;
+}
+
+.product-info {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    width: 100%;
+    /* padding: 20px; */
+}
+
+
+
+.add-to-cart {
+    background-color: #037BC0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/** Categorias*/
+.category-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.category-img{
+    width: 100%;
+}
+
+.category-col-4
+{
+    flex: 1;
+}
+
+/** Footer */
+.footer-row{
+    display: flex;
+    text-align: center;
+}
+.footer-col-4
+{
+    flex: 1;
+}
+
+.footer nav{
+    display: flex;
+    flex-direction:column;
+}
+
+.footer nav a{
+    color: black;
+}
