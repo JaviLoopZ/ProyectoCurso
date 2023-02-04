@@ -1,6 +1,6 @@
 const modalImagen = document.querySelector('#modal-imagen');
-const navbarToggler = document.querySelector(".navbar-toggler");
-//const navbarMenu = document.querySelector(".navbar-menu");
+const menu = document.querySelector('.navbar-menu');
+const toggleButton = document.querySelector('.navbar-toggler');
 
 if(modalImagen) {
     modalImagen.addEventListener('show.bs.modal', function(event) {
@@ -53,9 +53,27 @@ function ShowMenu(){
     const menu = document.querySelector('.navbar-menu');
     menu.classList.toggle('show');
   
-  //navbarToggler.addEventListener("click", function() {
-   // navbarMenu.classList.toggle("show");
-  //});
 }
+
+function HideMenu()
+{
+  const menu = document.querySelector('.navbar-menu');
+  if (!menu.contains(event.target) && menu.classList.contains('show')) {
+    menu.classList.remove('show');
+
+  }
+}
+
+// toggleButton.addEventListener('click', function() {
+//   menu.classList.toggle('show');
+// });
+
+// document.addEventListener('click', function(event) {
+//   if (!menu.contains(event.target) && menu.classList.contains('show')) {
+//     menu.classList.remove('show');
+//   }
+// });
+
+
   
   

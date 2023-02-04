@@ -17,12 +17,12 @@
 
 <body>
     <header>
-        <h1><span class="title">Tienda <span class="span-muebles">Muebles</span></span></h1>
+        <h1><span class="title">Tienda de <span class="span-muebles">Muebles</span></span></h1>
     </header>
 
 
     <nav class="navbar">
-        <button class="navbar-toggler" onclick="ShowMenu()">Menú</button>
+        <button class="navbar-toggler" onclick="ShowMenu()" onblur="HideMenu()">Menú</button>
         <ul class="navbar-menu">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Nosotros</a></li>
@@ -34,166 +34,175 @@
         
     </nav>
 
+    <main class="main-content">
+        <div class="hero">
+            <div></div>
+            <!-- hero content here -->
+        </div>
+        <section class="productos">
+            <h2>Nuestros Productos</h2>
 
-    <div class="hero">
-        <div></div>
-        <!-- hero content here -->
-    </div>
-    <section class="productos">
-        <h2>Nuestros Productos</h2>
-        <div class="grid-container-1">
-            <div class="row-product-1">
-                <div class="col-9 img-prod-1">
-                   
+            <div class="container grid-container">
+                <div class="column-border-img-product-1 col-sm-12">
+                    <img src="./IMG/producto1.jpg" alt="producto1">
                 </div>
-                <div class="col-3">
-                    <div class="product-info column-border-product1 bs-blue">
-                        <h3>Producto 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adispisicing elit. Quam deleniti sed recusandae vitae
-                        </p>
-                        <p>$12.000.00</p>
-                        <button class="add-to-cart bs-green">Agregar al carrito</button>
+                <div class="product-info column-border-product1 bs-blue col-sm-12">
+                    <h3>Producto 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adispisicing elit. Quam deleniti sed recusandae vitae
+                    </p>
+                    <p>$12.000.00</p>
+                    <button class="add-to-cart bs-green">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="container grid-container-2" >
+                <!-- <div class="grid-item-2"> -->
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 colum-padding-bottom">
+                            <div class="column-border-img">
+                                <img src="./IMG/producto2.jpg" class="product-img-row2">
+                            </div>
+                        
+                            <div class="product-info column-border bs-blue">
+                                <h3>Producto 2</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adispisicing elit. Quam deleniti sed recusandae vitae</p>
+                                <p>$12.000.00</p>
+                                <button type="button" class="add-to-cart bs-green">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-6 col-sm-12">
+                            <div class="column-border-img">
+                                <img src="./IMG/producto3.jpg" class="product-img-row2">
+                            </div>
+                        
+                            <div class="product-info column-border bs-blue">
+                                <h3>Producto 3</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adispisicing elit. Quam deleniti sed recusandae vitae</p>
+                                <p>$12.000.00</p>
+                                <button type="button" class="add-to-cart bs-green">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- </div> -->
+
+            <div class="container grid-container-3">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 colum-padding-bottom">
+                        <div class="column-border-img">
+                            <img src="./IMG/producto4.jpg" class="product-img-row2">
+                        </div>
+                        <div class="product-info column-border bs-blue">
+                            <h3>Producto 4</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adispisicing elit. Quam deleniti sed recusandae vitae</p>
+                            <p>$12.000.00</p>
+                            <button type="button" class="add-to-cart bs-green">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 colum-padding-bottom">
+                        <div class="column-border-img">
+                            <img src="./IMG/producto5.jpg" class="product-img-row2">
+                        </div>
+                        <div class="product-info column-border bs-blue">
+                            <h3>Producto 5</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adispisicing elit. Quam deleniti sed recusandae vitae</p>
+                            <p>$12.000.00</p>
+                            <button type="button" class="add-to-cart bs-green">Agregar al carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                        <div class="column-border-img">
+                            <img src="./IMG/producto6.jpg" class="product-img-row2">
+                        </div>
+                        <div class="product-info column-border bs-blue">
+                            <h3>Producto 6</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adispisicing elit. Quam deleniti sed recusandae vitae</p>
+                            <p>$12.000.00</p>
+                            <button type="button" class="add-to-cart bs-green">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="categorias">
+            <h2>Categorías de productos</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="column-border-img">
+                            <a href="#"><img src="./IMG/categoria1.jpg" class="product-img-catego"></a>
+                        </div>
+                        <div class="">
+                            <h3>Oficina</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="column-border-img">
+                            <a href="#"><img src="./IMG/categoria2.jpg" class="product-img-catego"></a>
+                        </div>
+                        <div class="">
+                            <h3>Hogar</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                        <div class="column-border-img">
+                            <a href="#"><img src="./IMG/categoria3.jpg" class="product-img-catego"></a>
+                        </div>
+                        <div class="">
+                            <h3>Cocina</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="grid-container-2">
-            <div class="grid-item-2">
-                <div class="product-img column-border-img">
-                    <img src="./IMG/producto2.jpg" class="product-img-row2">
+        <footer class="footer container-xl">
+            <div class="footer-row">
+                <div class="footer-col-4">
+                    <h3>Categorías</h3>
+                    <nav>
+                        <a href="">Cocina</a>
+                        <a href="">Oficina</a>
+                        <a href="">Jardín</a>
+                        <a href="">Cochera</a>
+                        <a href="">Dormitorio</a>
+                    </nav>
                 </div>
-                <div class="product-info column-border bs-blue">
-                    <h3>Producto 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adispisicing elit. Quam deleniti sed recusandae vitae</p>
-                    <p>$12.000.00</p>
-                    <button type="button" class="add-to-cart bs-green">Agregar al carrito</button>
+                <div class="footer-col-4">
+                    <h3>Sobre nosotros</h3>
+                    <nav>
+                        <a href="">Nuestra historia</a>
+                        <a href="">Misión, Visión y Valores</a>
+                        <a href="">Carrera</a>
+                        <a href="">Políticas de privacidad</a>
+                        <a href="">Términos del servicio</a>
+                    </nav>
                 </div>
-            </div>
-            <div class="grid-item-2">
-                <div class="product-img column-border-img">
-                    <img src="./IMG/producto3.jpg" class="product-img-row2">
-                </div>
-                <div class="product-info column-border bs-blue">
-                    <h3>Producto 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adispisicing elit. Quam deleniti sed recusandae vitae</p>
-                    <p>$12.000.00</p>
-                    <button type="button" class="add-to-cart bs-green">Agregar al carrito</button>
-                </div>
-            </div>
 
-        </div>
-
-        <div class="grid-container-3">
-            <div class="grid-item-3">
-                <div class="product-img column-border-img">
-                    <img src="./IMG/producto4.jpg" class="product-img-row2">
-                </div>
-                <div class="product-info column-border bs-blue">
-                    <h3>Producto 4</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adispisicing elit. Quam deleniti sed recusandae vitae</p>
-                    <p>$12.000.00</p>
-                    <button type="button" class="add-to-cart bs-green">Agregar al carrito</button>
-                </div>
-            </div>
-            <div class="grid-item-3">
-                <div class="product-img column-border-img">
-                    <img src="./IMG/producto5.jpg" class="product-img-row2">
-                </div>
-                <div class="product-info column-border bs-blue">
-                    <h3>Producto 5</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adispisicing elit. Quam deleniti sed recusandae vitae</p>
-                    <p>$12.000.00</p>
-                    <button type="button" class="add-to-cart bs-green">Agregar al carrito</button>
+                <div class="footer-col-4">
+                    <h3>Soporte</h3>
+                    <nav>
+                        <a href="">Preguntas frecuentes</a>
+                        <a href="">Ayuda en línea</a>
+                        <a href="">Confianza y seguridad</a>
+                    </nav>
                 </div>
             </div>
 
-            <div class="grid-item-3">
-                <div class="product-img column-border-img">
-                    <img src="./IMG/producto6.jpg" class="product-img-row2">
-                </div>
-                <div class="product-info column-border bs-blue">
-                    <h3>Producto 6</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adispisicing elit. Quam deleniti sed recusandae vitae</p>
-                    <p>$12.000.00</p>
-                    <button type="button" class="add-to-cart bs-green">Agregar al carrito</button>
-                </div>
+            <div class="footer-row-derechos">
+                <p>Todos los derechos reservados. Tienda muebles</p>
             </div>
+            
+        </footer>
 
-        </div>
-    </section>
-    <section class="categorias">
-        <h2>Categorías de productos</h2>
-        <div class="grid-container-category">
-            <div class="">
-                <div class="product-img column-border-img">
-                    <a href="#"><img src="./IMG/categoria1.jpg" class="product-img-catego"></a>
-                </div>
-                <div class="">
-                    <h3>Oficina</h3>
-                </div>
-            </div>
-            <div class="">
-                <div class="product-img column-border-img">
-                    <a href="#"><img src="./IMG/categoria2.jpg" class="product-img-catego"></a>
-                </div>
-                <div class="">
-                    <h3>Hogar</h3>
-                </div>
-            </div>
-
-            <div class="">
-                <div class="product-img column-border-img">
-                    <a href="#"><img src="./IMG/categoria3.jpg" class="product-img-catego"></a>
-                </div>
-                <div class="">
-                    <h3>Cocina</h3>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-row">
-            <div class="footer-col-4">
-                <h3>Categorías</h3>
-                <nav>
-                    <a href="">Cocina</a>
-                    <a href="">Oficina</a>
-                    <a href="">Jardín</a>
-                    <a href="">Cochera</a>
-                    <a href="">Dormitorio</a>
-                </nav>
-            </div>
-            <div class="footer-col-4">
-                <h3>Sobre nosotros</h3>
-                <nav>
-                    <a href="">Nuestra historia</a>
-                    <a href="">Misión, Visión y Valores</a>
-                    <a href="">Carrera</a>
-                    <a href="">Políticas de privacidad</a>
-                    <a href="">Términos del servicio</a>
-                </nav>
-            </div>
-
-            <div class="footer-col-4">
-                <h3>Soporte</h3>
-                <nav>
-                    <a href="">Preguntas frecuentes</a>
-                    <a href="">Ayuda en línea</a>
-                    <a href="">Confianza y seguridad</a>
-                </nav>
-            </div>
-        </div>
-        <div class="footer-row-derechos">
-            <p>Todos los derechos reservados. Tienda muebles</p>
-
-        </div>
-    </footer>
-
-    <script src="/JS/bootstrap.bundle.min.js"></script>
-    <script src="/JS/app.js"></script>
+        <script src="/JS/bootstrap.bundle.min.js"></script>
+        <script src="/JS/app.js"></script>
+    </main>
 </body>
 
 </html>
