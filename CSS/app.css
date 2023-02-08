@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: 'Raleway', sans;
+        
     font-size: 1.6rem;
     line-height: 2;
     max-width: 100%;
@@ -23,7 +23,6 @@ h3 {
     font-family: 'Playfair', sans;
     text-align: center;
 }
-
 
 .h1 {
     font-size: 5rem;
@@ -90,13 +89,13 @@ nav a {
 
 /*Media Query*/
 
-@media (min-width: 768px)
+/* @media (min-width: 768px)
 {
 
-    .navbar-menu.show {
+    .navbar-menu {
         display: none
-    }
-}
+    } 
+} */
 
 @media(min-width: 768px) and (max-width: 991.99px)
 {
@@ -110,11 +109,16 @@ nav a {
 {
     .grid-container{
         grid-template-columns: 66.666667% 33.333333%;
-        grid-template-rows: .6fr;
+        grid-template-rows: 300px;
+        /* grid-template-rows: .6fr; */
     } 
 }
 
 @media (max-width: 767.99px) {
+
+    .navbar-menu.show {
+        display: none
+    }
 
     .navbar ul {
         display: none;
@@ -133,11 +137,6 @@ nav a {
     .navbar {
         transition: height 0.35s ease;
     }
-
-
-    /* .grid-container {
-        grid-template-columns: .5fr;
-    } */
 
     .colum-padding-bottom
     {
@@ -347,6 +346,10 @@ img {
     padding: 0.5em;
     border-radius: 10px 10px 0 0;
     /* padding: 20px; */
+}
+
+.product-info p{
+    font-family: 'Raleway', sans;
 }
 
 .product-info-grid2 {
