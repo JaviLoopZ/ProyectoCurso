@@ -64,16 +64,8 @@ function HideMenu()
   }
 }
 
-// toggleButton.addEventListener('click', function() {
-//   menu.classList.toggle('show');
-// });
-
-// document.addEventListener('click', function(event) {
-//   if (!menu.contains(event.target) && menu.classList.contains('show')) {
-//     menu.classList.remove('show');
-//   }
-// });
-
-
-  
-  
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 767.99 && menu.classList.contains('show')) {
+    menu.classList.remove('show');
+  }
+});
