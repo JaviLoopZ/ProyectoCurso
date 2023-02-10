@@ -143,16 +143,16 @@ nav a {
         padding-bottom: 1.5em;
     }
 
-    .show {
+    /* .show {
         display: flex;
         flex-direction: column;
-        position: fixed;
+        position: absolute;
         height: auto;
         margin-top: 180px;
         background: whitesmoke;
         transition: height 0.35s ease;
         overflow: hidden;
-    }
+    } */
 
     .row-gap
     {
@@ -160,21 +160,21 @@ nav a {
     }
 }
 
-.show {
+/* .show {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     height: auto;
     margin-top: 180px;
     background: whitesmoke;
     transition: height 0.35s ease;
     overflow: hidden;
-}
+} */
 
 .navbar-menu.show {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     height: auto;
     margin-top: 180px;
     background: whitesmoke;
