@@ -46,9 +46,9 @@ nav a {
     color: #037BC0;
 }
 
-.btn-menu {
+/* .btn-menu {
     display: none;
-}
+} */
 
 .navbar {
     display: flex;
@@ -73,8 +73,20 @@ nav a {
     width: 100%;
 }
 
+.navbar ul li a{
+    color: gray;
+}
+
+.navbar ul li a:hover
+{
+    color: #333;
+    transition: 0.35s ease-in-out
+}
+
 .navbar-toggler {
     display: none;
+    border-radius: 10px;
+    border: 1px solid gray;
 }
 
 .hero {
@@ -87,15 +99,12 @@ nav a {
         overflow: hidden;
 }
 
-/*Media Query*/
-
-/* @media (min-width: 768px)
+.btn-menu
 {
+    border-radius: 2px solid gray;
+}
 
-    .navbar-menu {
-        display: none
-    } 
-} */
+/*Media Query*/
 
 @media(min-width: 768px) and (max-width: 991.99px)
 {
@@ -125,12 +134,22 @@ nav a {
         width: auto;
     }
 
+    .navbar ul li a{
+        color: gray;
+    }
+
+    .navbar ul li a:hover
+    {
+        color: #333;
+        transition: 0.35s ease-in-out
+    }
+
     .navbar-toggler {
         display: block;
         background-color: #333;
         color: gray;
         padding: 10px 15px;
-        border: 0;
+        border: 2px solid;
         cursor: pointer;
     }
 
@@ -142,18 +161,6 @@ nav a {
     {
         padding-bottom: 1.5em;
     }
-
-    /* .show {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        height: auto;
-        margin-top: 180px;
-        background: whitesmoke;
-        transition: height 0.35s ease;
-        overflow: hidden;
-    } */
-
     .row-gap
     {
         row-gap: 20px;
@@ -424,8 +431,14 @@ img {
 .footer nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .footer nav a {
     color: black;
+}
+
+.footer nav a:hover{
+    color: gray;
+    transition: 0.35s ease-in-out
 }
